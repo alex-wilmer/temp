@@ -1,5 +1,7 @@
-import Home from './Home'
+import Files from './Files'
+import Annotations from './Annotations'
 
 export default {
-  Home,
+  Files,
+  Annotations,
 }

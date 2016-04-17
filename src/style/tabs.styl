@@ -1,0 +1,37 @@
+$tabBorder = 1px solid white - 50
+
+tabBorder()
+  border-left $tabBorder
+  border-right $tabBorder
+  border-top $tabBorder
+  border-radius 4px 4px 0 0
+
+.tab
+  padding 1.5rem 2rem
+  font-size 1.5rem
+  color black
+  text-decoration none
+  border 1px solid transparent
+  background-color $greyScale5
+  margin-bottom -1px
+  transition background-color 0.2s ease
+
+  &:focus,
+  &:active,
+  &:hover
+    text-decoration none
+    color black
+    background-color $greyScale5 - 10
+    tabBorder()
+
+  &.active
+    background-color white
+    z-index 2
+    tabBorder()
+
+.tab + .tab
+  margin-left 0.3rem
+
+.tab-content
+  border $tabBorder
+  background-color white

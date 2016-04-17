@@ -1,3 +1,1 @@
-module.exports = {
-  domain: 'http://localhost'
-}
+export const activeDataPortal = `https://gdc-porta.nci.nig.gov`
