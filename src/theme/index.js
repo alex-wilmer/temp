@@ -18,5 +18,10 @@ export default {
    */
 
   facetsPanelWidth: `30rem`,
+}
 
+export let center = {
+  display: `flex`,
+  alignItems: `center`,
+  justifyContent: `center`,
 }

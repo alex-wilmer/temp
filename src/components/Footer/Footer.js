@@ -14,7 +14,7 @@ let Footer = ({
         <span> | </span>
         <a href="http://www.cancer.gov/global/web/policies/foia" className={styles.link}>FOIA</a>
       </div>
-      <div>
+      <div className={styles.innerContainer}>
         <a href="http://www.hhs.gov" className={styles.link}>U.S. Department of Health and Human Services</a>
         <span> | </span>
         <a href="http://www.nih.gov" className={styles.link}>National Institutes of Health</a>
@@ -23,10 +23,10 @@ let Footer = ({
         <span> | </span>
         <a href="http://www.usa.gov" className={styles.link}>USA.gov</a>
       </div>
-      <div>
+      <div className={styles.innerContainer}>
         NIH... Turning Discovery Into Health &#174;
       </div>
-      <div>
+      <div className={styles.innerContainer}>
         <span> UI </span>
         <a href={config.tag} className={styles.link}>{config.version}</a>
         <span> @ </span>
@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
     color: `#97abb6`,
     textAlign: `center`,
   },
-  innercontainer: {
+  innerContainer: {
     margin: `5px auto 0`,
     textAlign: `center`,
   },

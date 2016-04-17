@@ -3,6 +3,14 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router'
 import { Row, Column } from 'components/UIKit/Flex'
 import Tabs from 'components/UIKitV2/Tabs'
+import Info from 'components/UIKitV2/Alerts/Info'
+
+/*
+ *  mock
+ */
+
+let files = []
+files.length = 20000
 
 let Files = ({
   location,
@@ -32,16 +40,19 @@ let Files = ({
     </Column>
 
     <Column className={styles.content}>
-      <Row className='alert-info'>
+      <Info>
         <i className='fa fa-long-arrow-left' />
         Start searching by selecting a facet
-      </Row>
+      </Info>
+
+      <Column>
+        <h2>Files</h2>
+      </Column>
     </Column>
   </Row>
 
 import { StyleSheet } from 'react-look'
 import theme from 'theme'
-import Color from 'color'
 
 const styles = StyleSheet.create({
   facetsPanel: {
