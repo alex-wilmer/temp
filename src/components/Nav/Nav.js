@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router'
-import { Row } from 'components/UIKit/Flex'
+import { Row } from 'uikit/Flex'
 
 let Nav = () =>
   <Row className={styles.nav}>
@@ -28,9 +28,9 @@ const styles = StyleSheet.create({
   link: {
     color: `white`,
     padding: `10px 13px`,
+    textDecoration: `none`,
     transition: `background-color 0.2s ease`,
     ':hover': {
-      textDecoration: `none`,
       backgroundColor: Color(theme.$greyScale2).darken(0.5).rgbString(),
     },
     ...center,

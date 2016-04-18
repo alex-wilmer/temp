@@ -1,5 +1,5 @@
 import React from 'react'
-import { Column } from 'components/UIKit/Flex'
+import { Column } from 'uikit/Flex'
 
 let CaseFacets = () =>
   <Column>

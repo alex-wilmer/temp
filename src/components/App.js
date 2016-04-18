@@ -1,15 +1,16 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { LookRoot } from 'react-look'
+import { LookRoot, Presets } from 'react-look'
+const config = Presets['react-dom']
 
 /*----------------------------------------------------------------------------*/
 
-import { Row, Column } from 'components/UIKit/Flex'
+import { Row, Column } from 'uikit/Flex'
 import Header from 'components/Header'
 import Footer from 'components/Footer'
 
 export let App = ({ children }) =>
-  <LookRoot>
+  <LookRoot config={config}>
     <Column className={styles.wrapper}>
       <Header />
       <Row className={styles.main}>{children}</Row>

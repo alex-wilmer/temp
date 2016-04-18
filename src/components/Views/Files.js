@@ -1,16 +1,18 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router'
-import { Row, Column } from 'components/UIKit/Flex'
-import Tabs from 'components/UIKitV2/Tabs'
-import Info from 'components/UIKitV2/Alerts/Info'
 
-/*
- *  mock
- */
+/*----------------------------------------------------------------------------*/
 
-let files = []
-files.length = 20000
+import { Row, Column } from 'uikit/Flex'
+import Tabs from 'uikit2/Tabs'
+import Info from 'uikit2/Alerts/Info'
+
+/*----------------------------------------------------------------------------*/
+
+import FacetSearchResults from 'components/FacetSearchResults'
+
+/*----------------------------------------------------------------------------*/
 
 let Files = ({
   location,
@@ -45,9 +47,7 @@ let Files = ({
         Start searching by selecting a facet
       </Info>
 
-      <Column>
-        <h2>Files</h2>
-      </Column>
+      <FacetSearchResults />
     </Column>
   </Row>
 

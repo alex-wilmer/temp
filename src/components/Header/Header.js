@@ -5,17 +5,17 @@ import { activePortalUrl } from 'config'
 
 /*----------------------------------------------------------------------------*/
 
-import { Row, Column } from 'components/UIKit/Flex'
+import { Row, Column } from 'uikit/Flex'
 import Nav from 'components/Nav'
 
 let Header = ({
 
 }) =>
-  <Column className={ styles.header }>
-    <Row className={ styles.top }>
+  <Column className={styles.header}>
+    <Row className={styles.top}>
       <Row flex='9'>
-        <Link to='/' className={ styles.logo }>GDC Legacy Archive</Link>
-        <span className={ styles.copy }>
+        <Link to='/' className={styles.logo}>GDC Legacy Archive</Link>
+        <span className={styles.copy}>
           The legacy data is the original data that uses the old genome build hg19
           as produced by the original submitter. The legacy data is not actively
           being updated in any way. Users should migrate to the harmonized data.
@@ -24,8 +24,8 @@ let Header = ({
         </span>
       </Row>
       <Row flex='3'>
-        <a href={ activePortalUrl } className={ styles.activePortalLink }>
-          <i className={ styles.activePortalLogo } />
+        <a href={activePortalUrl} className={styles.activePortalLink}>
+          <i className={styles.activePortalLogo} />
           <Column>
             <Row>Launch the</Row>
             <Row><strong>GDC Data Portal</strong></Row>

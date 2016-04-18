@@ -8,7 +8,7 @@ let background = {
   backgroundColor: theme.greyScale5,
 }
 
-StyleSheet.addCSS({
+let global = {
   html: {
     ...background,
     fontSize: `10px`,
@@ -26,10 +26,12 @@ StyleSheet.addCSS({
   },
   a: {
     color: theme.primary,
-    textDecoration: `none`,
     cursor: `pointer`,
   },
   h2: {
+    textTransform: `capitalize`,
     fontWeight: 300,
   },
-})
+}
+
+StyleSheet.addCSS(global)

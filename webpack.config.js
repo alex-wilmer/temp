@@ -38,6 +38,8 @@ module.exports = {
       components: 'src/components',
       dux: 'src/dux',
       utils: 'src/utils',
+      uikit: 'src/uikit',
+      uikit2: 'src/uikit2',
       config: 'src/config',
       theme: 'src/theme',
     },
