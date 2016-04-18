@@ -31,6 +31,7 @@ let global = {
   h2: {
     textTransform: `capitalize`,
     fontWeight: 300,
+    margin: `0.5rem 0`,
   },
 }
 
